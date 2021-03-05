@@ -1,0 +1,37 @@
+start / cmd
+cd ..			(feljebb vissza a mappából)
+cd "mappanév"		(belevissz a mappába)
+cls vagy clear		(ablak törlése, könyvtár sor marad)
+mkdir "mappanév"	(mappa létrehozása)
+dir			(megmutatja a mappa tartalmát)
+ls			(kilistázza a mappa tartalmát, mint a dir)
+git init		(helyi könyvtár létrehozása, GIT repository)
+git status		(mappa könyvtárának az infója)
+touch test.txt		(file létrehozás)
+git add			(hozzáadás)
+git commit -m ""	("közé, hogy mi a commit leírása")	
+git add '*.txt'		(egyszerre több file-t adhatunk hozzá, nem egyesével)
+git log			(kilistáza, hogy milyen commitok voltak)
+git remote add origin	(távoli elérés módosítása, és ez után meg kell adni a https/..elérését)
+git push -u origin master(vagy:main)(ezzel lehet fel commit-olni, a -u megadásával rögzíti, így mindig oda fogja feltenni)
+git config --global 	(állítunk, módosítunk valamit)
+git config --global user.email	(ezzel a kiírja, hogy milyen e-mail cím van beállítva)
+git config --global user.email "valaki@gmail.com"	(ha nincs megadva, akkor aposztrópok "" közé beírjuk)
+git config --global user.name "Misi"	(a commitjaim milyen néven jelenjenek meg)
+
+git push origin master	(felteszi a lent lévő változtatásaimat)
+git pull origin master	(leszedi a fent lévő változásokat)
+git pull origin master --allow-unrelated-histories
+ls -la			()
+cat .gitignore		(megmutatja a file tartalmát)
+
+https://github.com/Miisii/Cygwintest.git
+rm -rf ./*		(mappa tartalmának törlése)
+git clone https://github.com/Miisii/Cygwintest.git	(távoliról létrehozz egy lokális reporizorit)
+git diff HEAD		(előző commit állapota, HEAD végleges verzió)
+git diff valami.txt	(ekkor megmutatja, hogy mi lett módosítva)
+git restore --staged 
+git diff --staged	(megmutatja azokat a file-okat amik színpadon vannak)
+git diff --cached valami.txt	(1 file tartalma) (nem műkszik)
+git reset valami.txt	(megmarad a változtatás, de leveszi a színpadról)
+git checkout -- valami.txt	(a file módosított tartalmát teljesen elvesztettük)
